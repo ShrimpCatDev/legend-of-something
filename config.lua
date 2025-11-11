@@ -7,7 +7,7 @@ conf.wW = conf.gW*5
 conf.wH = conf.gH*5
 
 conf.textureFilter = "nearest"
-conf.fit = "aspect"
+conf.fit = "pixel"
 conf.render="layer"
 conf.vsync=true
 

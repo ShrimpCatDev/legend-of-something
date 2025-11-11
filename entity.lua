@@ -8,6 +8,7 @@ function entity:new(x,y)
 end
 
 function entity:draw()
+    lg.setColor(1,0,1,1)
     lg.rectangle("fill",self.x,self.y,self.w,self.h)
 end
 

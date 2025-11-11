@@ -5,7 +5,7 @@ function love.load()
     map=sti("assets/tilemap/test.lua")
     shove.createLayer("game")
 
-    local e=require("entity")
+    local e=require("player")
     test=e(10,10)
 end
 
