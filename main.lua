@@ -4,7 +4,8 @@ lg=love.graphics
 function love.load()
     world=bump.newWorld(24)
 
-    map=sti("assets/tilemap/test.lua")
+    map=sti("assets/tilemap/test.lua",{"bump"})
+    map:bump_init(world)
     shove.createLayer("game")
 
     local e=require("player")
