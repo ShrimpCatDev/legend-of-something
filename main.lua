@@ -1,7 +1,12 @@
 require("init")
+lg=love.graphics
 
 function love.load()
     map=sti("assets/tilemap/test.lua")
+    shove.createLayer("game")
+
+    local e=require("entity")
+    test=e(10,10)
 end
 
 function love.update(dt)
@@ -10,6 +15,9 @@ end
 
 function love.draw()
     shove.beginDraw()
-        map:draw()
+        shove.beginLayer("game")
+            map:draw()
+            test:draw()
+        shove.endLayer()
     shove.endDraw()
 end
