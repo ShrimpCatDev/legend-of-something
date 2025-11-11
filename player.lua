@@ -2,6 +2,10 @@ local e=require("entity")
 
 local pl=e:extend()
 
+function pl:update(dt)
+    self.x=self.x+dt*12
+end
+
 function pl:draw()
     pl.super.draw(self)
     lg.setColor(0,0,1)

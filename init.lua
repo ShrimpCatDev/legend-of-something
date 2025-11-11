@@ -16,3 +16,4 @@ shove.setWindowMode(conf.wW,conf.wH,{resizable=true,vsync=conf.vsync})
 sti=require("lib.sti")
 
 class=require("lib/classic")
+bump=require("lib/bump")

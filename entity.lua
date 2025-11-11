@@ -1,10 +1,16 @@
 local entity=class:extend()
 
-function entity:new(x,y)
+function entity:new(x,y,w,h)
     self.x=x
     self.y=y
-    self.w=12
-    self.h=12
+    self.w=w or 12
+    self.h=h or 12
+
+    world:add(self,x,y,w,h)
+end
+
+function entity:update(dt)
+
 end
 
 function entity:draw()
